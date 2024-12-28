@@ -113,7 +113,7 @@ main {
     min-height: calc(100vh - 76px);
     background-image: url('pricing.svg');
     background-size: 95% auto;
-    min-height: 1100px;
+    min-height: 1300px;
     height: auto;
 }
 
