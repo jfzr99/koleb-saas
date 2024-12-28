@@ -74,7 +74,7 @@ main {
 }
 
 .features-section {
-    min-height: 500px; /* Minimum height */
+    min-height: 700px; /* Minimum height */
     height: auto; /* Allow content to expand */
     background-image: url('Bar\ 2.svg');
     background-size: 95% auto;
@@ -89,7 +89,7 @@ main {
 .cta-section {
     background-image: url('Bar\ 4.svg');
     background-size: 95% auto;
-    min-height: 600px;
+    min-height: 800px;
     height: auto;
 }
 .sta-section {
