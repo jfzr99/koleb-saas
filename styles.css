@@ -1,0 +1,295 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+.nav-link {
+    color: #333;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #2ECC71;
+}
+
+.btn-try {
+    background-color: #2ECC71;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-try:hover {
+    background-color: #31D861;
+    color: white;
+}
+
+/* Content Container Styles */
+
+main {
+    margin-top: 76px; /* Height of fixed navbar */
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Consistent spacing between sections */
+    padding-bottom: 80px; /* Space before footer */
+}
+
+.content-section {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    min-height: fit-content;
+}
+
+.hero-section {
+    min-height: calc(100vh - 76px); /* Full viewport height minus navbar */
+    display: flex;
+    background-image: url('Main\ bar.svg');
+    background-size: 95% auto;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.features-section {
+    min-height: 500px; /* Minimum height */
+    height: auto; /* Allow content to expand */
+    background-image: url('Bar\ 2.svg');
+    background-size: 95% auto;
+}
+
+.project-section {
+    background-image: url('Bar\ 3.svg');
+    background-size: 95% auto;
+    min-height: 600px;
+    height: auto;
+}
+.cta-section {
+    background-image: url('Bar\ 4.svg');
+    background-size: 95% auto;
+    min-height: 600px;
+    height: auto;
+}
+.sta-section {
+    background-image: url('Bar\ 5.svg');
+    background-size: 95% auto;
+    min-height: 500px;
+    height: auto;
+}
+
+/* Contact Section */
+.bar2-section {
+    min-height: calc(100vh - 76px);
+    background-image: url('Main\ bar\ contact.svg');
+    background-size: 95% auto;
+    min-height: 700px;
+    height: auto;
+}
+
+/* Pricing */
+.pricing-section {
+    background-image: url('pricing.svg');
+    background-size: 95% auto;
+    min-height: 1100px;
+    height: auto;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #15171A;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .nav-link {
+        margin: 5px 0;
+    }
+    
+    .btn-try {
+        margin: 10px auto;
+        display: block;
+        width: 200px;
+    }
+    
+    .footer {
+        padding: 30px 0;
+    }
+}
+
+/* contact form */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-card {
+    background-size: cover;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+
+.image-container {
+    width: 100%;
+    height: 200px; /* Set desired height for the image section */
+    overflow: hidden; /* Ensures image doesn't spill out */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container while cutting excess */
+    object-position: center; /* Center the image */
+}
+
+form {
+    padding: 20px; /* Padding for the form content */
+}
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #111827;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #4B5563;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+
+.form-row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #374151;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #111827;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2ECC71;
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1);
+}
+
+input::placeholder, select::placeholder {
+    color: #9CA3AF;
+}
+
+.submit-btn {
+    background: #2ECC71;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: auto;
+    display: block;
+    margin: 32px auto 0;
+}
+
+.submit-btn:hover {
+    background: #27AE60;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-card {
+        width: 90%;
+        max-width: 636px;
+        height: auto;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+}
